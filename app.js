@@ -32,7 +32,7 @@ function intentoUsuario() {
         }
     }
     if (numUsuario === adivinaEste) {
-        setTexto("p", `lo lograste en ${intentos+1} intento${intentos > 1 ? 's' : ''}`);
+        setTexto("p", `lo lograste en ${intentos+1} intento${intentos > 0 ? 's' : ''}`);
         finalizaJuego();
     } else if (numUsuario >= adivinaEste) {
         setTexto("p", 'el número es menor!');
